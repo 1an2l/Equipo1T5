@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #003366; /* Azul UNAM */
+  color: #ffd700; /* Dorado UNAM */
+  padding: 20px 0;
+  text-align: center;
+}
+
+ul.autores {
+  list-style: none; /* Eliminamos los puntos */
+  padding: 0;
+}
+
+ul.autores li {
+  color: #ffd700; /* Color dorado */
+}
+
+nav {
+  width: 100%;
+  background-color: #002244; /* Cambiamos el color de fondo del nav */
+  padding: 10px 0;
+  position: relative; /* Inicialmente, el nav es relativo */
+  transition: top 0.3s;
+  z-index: 999;
+}
+
+nav.fixed {
+  position: fixed; /* Se vuelve fijo al hacer scroll */
+  top: 0;
+}
+
+nav.hidden {
+  top: -60px; /* Oculta el nav desplazándolo hacia arriba */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #ffd700; /* Color dorado */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  background: white;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #003366; /* Azul UNAM */
+}
+
+footer {
+  background: #003366; /* Azul UNAM */
+  color: #ffd700; /* Dorado UNAM */
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Estilos para el botón flotante */
+.back-to-top {
+  display: none; /* Se oculta inicialmente */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #003366; /* Azul UNAM */
+  color: #ffd700; /* Dorado UNAM */
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.back-to-top:hover {
+  background-color: #002244; /* Azul más oscuro al pasar el ratón */
+  color: #ffffff; /* Color blanco al hacer hover */
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  text-align: center;
+  height: 4cm;
+}

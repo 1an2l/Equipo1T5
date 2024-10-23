@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blog sobre Seguridad Informática Básica."
+    />
+    <meta name="author" content="Equipo 01" />
+    <title>Seguridad Informática Básica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Seguridad Informática Básica</h1>
+      <h3>24 de octubre de 2024 - Grupo 01</h3>
+      <h3>Autores:</h3>
+      <ul class="autores">
+        <li>Cruz Calderón Jorge Luis - 318344458</li>
+        <li>Hernández Vázquez Daniela - 318092867</li>
+        <li>Montelongo Alquicira Marco Antonio - 318321585</li>
+        <li>Ocaña Casillas Jonathan Leonardo - 318276258</li>
+        <li>Sánchez Estrada Angel Isaac - 318330536</li>
+      </ul>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#metasploit">Metasploit</a></li>
+        <li><a href="#osstmm">Metodología OSSTMM v3</a></li>
+        <li><a href="#pentesting">Pentesting</a></li>
+        <li><a href="#robo-identidad">Robo de Identidad</a></li>
+        <li><a href="#firewalls">Ataques a Firewalls</a></li>
+        <li>
+          <a href="#detectores-intrusos">Engaño a Detectores de Intrusos</a>
+        </li>
+        <li><a href="#ataques-contrasenas">Ataques a Contraseñas</a></li>
+        <li>
+          <a href="#protocolos-red">Debilidades de los Protocolos de Red</a>
+        </li>
+        <li><a href="#fingerprinting">Fingerprinting</a></li>
+        <li><a href="#atacantes">Tipos de Atacantes</a></li>
+        <li><a href="#hackers-famosos">Hackers Famosos</a></li>
+        <li><a href="#Bibliografia">Bibliografía</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="metasploit">
+        <h2>Metasploit</h2>
+        <p>
+          Metasploit es un framework de código abierto utilizado principalmente
+          para realizar pruebas de penetración y desarrollar y ejecutar
+          exploits. Creado originalmente por H.D. Moore en 2003, Metasploit ha
+          evolucionado significativamente, convirtiéndose en una herramienta
+          integral en el arsenal de cualquier profesional de la ciberseguridad.
+          Metasploit permite a los profesionales de seguridad simular ataques en
+          redes y sistemas, evaluando sus defensas y descubriendo
+          vulnerabilidades que podrían ser explotadas por atacantes
+          malintencionados.
+        </p>
+        <p>
+          Metasploit destaca en el ámbito de las pruebas de penetración,
+          detallamos algunas de las ventajas más significativas:
+        </p>
+        <ul>
+          <li>
+            <i> Amplia Base de Datos de Exploits: </i>
+            Permite a los usuarios tener acceso a los últimos métodos de
+            explotación y vulnerabilidades.
+          </li>
+          <li>
+            <i> Código Abierto y Comunidad Activa: </i>
+            Metasploit se beneficia de una gran comunidad de desarrolladores y
+            profesionales de la ciberseguridad que contribuyen a su desarrollo.
+            Facilita el intercambio de conocimientos y recursos entre usuarios.
+          </li>
+          <li>
+            <i> Modularidad y Flexibilidad: </i>
+            Diseñado con una arquitectura modular que permite a los usuarios
+            añadir, modificar y personalizar módulos según sus necesidades.
+          </li>
+          <li>
+            <i> Interfaz de Usuario Intuitiva: </i>
+            Ofrece tanto una línea de comandos (MSFconsole) como una interfaz
+            gráfica (Armitage) que simplifican el uso de la herramienta.
+          </li>
+          <li>
+            <i> Metasploit Pro: </i>
+            Versión comercial de Metasploit, ofrece características avanzadas
+            adicionales como la automatización de pruebas, la generación de
+            informes detallados, y funciones de gestión de vulnerabilidades.
+          </li>
+          <li>
+            <i> Educación y Formación: </i>
+            Es ampliamente utilizado en programas educativos y formativos de
+            ciberseguridad debido a su versatilidad y poder. Proporciona un
+            entorno práctico para aprender sobre explotación de vulnerabilidades
+            y técnicas de hacking ético.
+          </li>
+          <li>
+            <i> Soporte y Documentación Extensiva </i>
+          </li>
+          <li>
+            <i> Actualizaciones Frecuentes </i>
+          </li>
+          <li>
+            <i> Entorno de Pruebas Seguro: </i>
+            Incluye el Metasploit Community CTF (Capture the Flag), un entorno
+            de pruebas seguro y controlado donde los usuarios pueden practicar
+            sus habilidades de hacking sin infringir ninguna ley o normativa.
+          </li>
+        </ul>
+        <center><img src="images/image26.png" /></center>
+      </section>
+
+      <section id="osstmm">
+        <h2>Metodología OSSTMM v3</h2>
+        <p>
+          OSSTMM es un estándar internacional reconocido para la realización de
+          pruebas de seguridad informática, proporciona una metodología
+          detallada para evaluar la seguridad en diversos sistemas, desde redes
+          y aplicaciones web hasta dispositivos móviles y sistemas de control
+          industrial. Su enfoque abierto y transparente, consensuado por
+          expertos globales, lo hace indispensable para profesionales y
+          organizaciones que aspiran a una seguridad de alto nivel.
+        </p>
+        <p>Características principales:</p>
+        <ul>
+          <li>
+            <i> Enfoque neutral y objetivo: </i>
+            Basado en principios de pruebas empíricas y medibles.
+          </li>
+          <li>
+            <i> Cinco áreas principales: </i>
+            Se enfoca en controles de seguridad en cinco áreas: interacciones
+            humanas, telecomunicaciones, redes de datos, sistemas inalámbricos y
+            controles físicos.
+          </li>
+          <li>
+            <i> Evaluación de controles de seguridad: </i>
+            Mide los controles de acceso, visibilidad, confianza y respuestas.
+          </li>
+          <li>
+            <i> Evaluación sin prejuicios: </i>
+            Se basa en hechos observables y medibles, sin suposiciones sobre las
+            defensas.
+          </li>
+          <li>
+            <i> Adaptabilidad: </i>
+            Se puede aplicar a diversos entornos de red y sectores, ya sea para
+            redes corporativas, sistemas industriales o infraestructuras
+            críticas.
+          </li>
+          <li>
+            <i> RAV (Risk Assessment Values): </i>
+            OSSTMM utiliza el concepto de valores de evaluación de riesgo (RAV),
+            una métrica que mide la exposición a riesgos. Esta métrica se
+            calcula considerando:
+            <ul>
+              <li>
+                <i> Superficie de ataque: </i>
+                La cantidad de puntos de entrada o vectores de ataque
+                disponibles para un posible atacante.
+              </li>
+              <li>
+                <i> Controles: </i>
+                Medidas de seguridad y protección implementadas para mitigar
+                ataques.
+              </li>
+              <li>
+                <i> Eficiencia de seguridad: </i>
+                Proporción entre los controles existentes y las vulnerabilidades
+                presentes.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          Algunos de los beneficios que se tiene al utilizar esta metodología
+          son:
+        </p>
+        <ul>
+          <li>
+            <i> Evaluaciones Exhaustivas: </i>
+            OSSTMM cubre aspectos cruciales como la seguridad de la información,
+            procesos, comunicaciones, inalámbrica y física, asegurando una
+            evaluación integral.
+          </li>
+          <li>
+            <i> Metodología Probada: </i>
+            Seguir este estándar garantiza que las pruebas de seguridad se
+            realizan de manera metódica y profesional, ofreciendo resultados
+            fiables, actualmente la versión más reciente es la v3.
+          </li>
+          <li>
+            <i> Mayor compatibilidad: </i>
+            Dominar y aplicar correctamente la metodología OSSTMM en auditorías
+            de seguridad facilita la compatibilidad entre las empresas
+            consultoras de seguridad informática, garantizando procesos medibles
+            y replicables al realizar auditorías de seguridad.
+          </li>
+          <li>
+            <i> Mejora Continua: </i>
+            Al ser un estándar vivo que se actualiza con regularidad, OSSTMM te
+            mantiene al frente en la protección contra las últimas amenazas y
+            vulnerabilidades.
+          </li>
+          <li>
+            <i> Cumplimiento Normativo: </i>
+            Ayuda a cumplir con estándares y regulaciones internacionales de
+            seguridad, como PCI DSS, HIPAA y GDPR, lo cual es esencial para
+            negocios de cualquier tamaño y sector.
+          </li>
+          <li>
+            <i> Reducción de Riesgos: </i>
+            Identifica y mitiga proactivamente las vulnerabilidades, minimizando
+            el riesgo de incidentes y sus impactos potenciales.
+          </li>
+        </ul>
+        <center><img src="images/image28.png" /></center>
+      </section>
+
+      <section id="pentesting">
+        <h2>Pentesting</h2>
+        <p>
+          El Pentesting es una abreviatura formada por dos palabras
+          “penetration” y “testing” y es una práctica/técnica que consiste en
+          atacar diferentes entornos o sistemas con la finalidad de encontrar y
+          prevenir posibles fallos en el mismo. El Pentesting o también llamado
+          test de penetración está diseñado para determinar el alcance de los
+          fallos de seguridad de un sistema. Asimismo, es una de las prácticas
+          más demandadas actualmente ya que gracias a estos test, una empresa
+          puede llegar a saber a qué peligros está expuesta y cuál es el nivel
+          de eficiencia de sus defensas.
+        </p>
+        <p>Tipos de Pentesting:</p>
+        <ul>
+          <li>
+            <i> Pentesting de caja blanca “White Box”: </i>
+            En este caso, el Pentester o Auditor conoce todos los datos sobre el
+            sistema (Estructura, contraseñas, IPs, firewalls… Y suele formar
+            parte del equipo técnico de la empresa).
+          </li>
+          <li>
+            <i> Pentesting de caja negra “Black Box”: </i>
+            Es el tipo de pentesting más “real” ya que, el Pentester no tiene
+            datos sobre la organización y actúa como un ciberdelincuente más.
+            Prueba “a ciegas” se debe descubrir las vulnerabilidades y amenazas
+            en la estructura de la red.
+          </li>
+          <li>
+            <i> Pentesting de caja gris “Grey Box”: </i>
+            El auditor posee cierta información a la hora de realizar el test,
+            la suficiente para no partir de cero. Es el tipo de pentest más
+            recomendado ya que se necesitará tiempo y medios para poder realizar
+            este test de penetración en su totalidad.
+          </li>
+        </ul>
+        <p>Características:</p>
+        <ul>
+          <li>
+            <i> Simulación de ataques: </i>
+            Simula un escenario real de ataque para probar la seguridad de los
+            sistemas.
+          </li>
+          <li>
+            <i> Identificación de vulnerabilidades: </i>
+            Descubre puntos débiles en las configuraciones, software y redes.
+          </li>
+          <li>
+            <i> Tipos de pruebas: </i>
+            Incluye pruebas de caja blanca (con conocimiento total del sistema),
+            caja negra (sin conocimiento) y caja gris (conocimientos parciales).
+          </li>
+          <li>
+            <i> Informe detallado: </i>
+            Proporciona un informe con hallazgos y recomendaciones para corregir
+            vulnerabilidades.
+          </li>
+          <li>
+            <i> Metodologías comunes: </i>
+            Se siguen metodologías reconocidas como OWASP (para aplicaciones
+            web) y OSSTMM.
+          </li>
+        </ul>
+        <center><img src="images/image27.png" /></center>
+      </section>
+
+      <section id="robo-identidad">
+        <h2>Robo de Identidad</h2>
+        <p>
+          La usurpación de identidad es un ciberdelito muy extendido, que se
+          produce cuando alguien se apropia de su información personal, como su
+          nombre, número de la seguridad social, números de cuentas bancarias o
+          datos de tarjetas de crédito, para cometer fraude u otras actividades
+          delictivas. La información personal robada suele utilizarse para
+          realizar compras no autorizadas, abrir nuevas cuentas, solicitar
+          préstamos o presentar declaraciones de impuestos fraudulentas.
+        </p>
+        <p>
+          Los ladrones de identidad utilizan métodos sofisticados para robar
+          información personal a víctimas desprevenidas. Utilizan la ingeniería
+          social y el phishing, los ataques de malware, los dispositivos de
+          skimming e incluso tácticas anticuadas como la búsqueda en
+          contenedores de basura para apoderarse de datos confidenciales.
+        </p>
+        <p>
+          La usurpación de identidad puede causar importantes daños económicos y
+          angustia emocional. Las víctimas se sienten violentadas y vulnerables
+          mientras intentan recuperar su identidad. Sin una protección eficaz
+          para mitigar tales amenazas, puede llevar meses o incluso años
+          recuperarse totalmente de un ataque, tanto financiera como
+          emocionalmente.
+        </p>
+        <p>Tipos de robo de identidad:</p>
+        <ul>
+          <li>
+            <i> Robo de identidad financiera: </i>
+            Esta forma común de robo de identidad se produce cuando los ladrones
+            roban información de una cuenta financiera, como números de tarjetas
+            de crédito o de cuentas bancarias. Suelen acceder a ellos engañando
+            al usuario para que revele esos datos en Internet o robándolos de
+            lugares o bases de datos no seguras.
+          </li>
+          <li>
+            <i> Robo de identidad médica: </i>
+            En el robo de identidad médica, los delincuentes utilizan
+            indebidamente la información del seguro médico de otra persona para
+            recibir servicios médicos. Este tipo de delito conlleva pérdidas
+            económicas y entradas incorrectas en el historial médico de la
+            víctima, lo que podría tener consecuencias peligrosas.
+          </li>
+          <li>
+            <i> Robo de identidad de la Seguridad Social: </i>
+            El robo de números de la seguridad social permite a los delincuentes
+            abrir nuevas líneas de crédito a nombre de la víctima, que pueden
+            causar daños importantes antes de ser detectados por las agencias de
+            crédito y reflejados en los informes crediticios.
+          </li>
+          <li>
+            <i> Robo de identidad de menores: </i>
+            En este caso, el ladrón de identidad utiliza el número de seguridad
+            social de un menor de edad para llevar a cabo diferentes tipos de
+            fraude.
+          </li>
+          <li>
+            <i> Robo de identidad sintética: </i>
+            En esta modalidad, los delincuentes combinan información real y
+            falsa para crear una identidad completamente nueva.
+          </li>
+          <li>
+            <i> Robo de identidad fiscal: </i>
+            Este tipo de robo se produce cuando alguien utiliza datos personales
+            robados (como números de la seguridad social) para presentar
+            declaraciones de impuestos ante el fisco y reclamar reembolsos
+            fraudulentos.
+          </li>
+          <li>
+            <i> Fraude a personas mayores: </i>
+            Los adultos mayores suelen ser el blanco de los estafadores por sus
+            buenas calificaciones crediticias. Por ejemplo, los estafadores
+            pueden hacerse pasar por representantes de la Seguridad Social y
+            pedir información confidencial por teléfono.
+          </li>
+          <li>
+            <i> Robo de identidad en redes sociales: </i>
+            Los delincuentes pueden aprovecharse de la escasa exigencia de
+            privacidad en las plataformas de redes sociales o crear cuentas
+            falsas en las mismas para suplantar la identidad de una persona con
+            fines malintencionados.
+          </li>
+          <li>
+            <i> Fraude en compras online: </i>
+            Se sabe que los cibercriminales piratean plataformas de compra
+            online vulnerables o inseguras para obtener información privada de
+            los clientes, como números de tarjetas de crédito.
+          </li>
+        </ul>
+        <center><img src="images/image30.png" /></center>
+      </section>
+
+      <section id="firewalls">
+        <h2>Ataques a Firewalls</h2>
+        <p>
+          Los ataques a firewalls buscan vulnerar o evadir las defensas que
+          estos dispositivos establecen en redes corporativas o domésticas. Los
+          firewalls son dispositivos o programas diseñados para filtrar y
+          bloquear tráfico no deseado entre diferentes zonas de red, por lo que
+          los atacantes intentan encontrar formas de sortear estas barreras.
+        </p>
+        <p>Características principales:</p>
+        <ul>
+          <li>
+            <i> Evasión de filtros: </i>
+            Técnicas para evitar las reglas del firewall, como la fragmentación
+            de paquetes IP, modificación del TTL (Time To Live), o el uso de
+            proxies.
+          </li>
+          <li>
+            <i> Ataques DoS/DDoS: </i>
+            Inundar el firewall con tráfico para sobrecargar sus capacidades.
+          </li>
+          <li>
+            <i> Explotación de vulnerabilidades: </i>
+            Buscar debilidades en el software del firewall para tomar control
+            del dispositivo o abrir brechas.
+          </li>
+          <li>
+            <i> Túneles cifrados: </i>
+            Utilizar conexiones cifradas (como VPN o SSH) para ocultar el
+            tráfico malicioso, evadiendo la inspección del firewall.
+          </li>
+        </ul>
+        <center><img src="images/image29.png" /></center>
+      </section>
+
+      <section id="detectores-intrusos">
+        <h2>Engaño a Detectores de Intrusos</h2>
+        <p>
+          El engaño a los detectores de intrusos es una técnica utilizada por
+          atacantes para evadir la detección de sus actividades maliciosas en
+          una red informática. Los IDS (Intrusion Detection Systems) y IPS
+          (Intrusion Prevention Systems) están diseñados para monitorear el
+          tráfico de red en busca de comportamientos anómalos o sospechosos que
+          podrían indicar un ataque en curso. Sin embargo, los atacantes
+          sofisticados han desarrollado diversas técnicas para esquivar estos
+          sistemas de seguridad y continuar sus acciones sin ser detectados.
+        </p>
+        <p>Características principales de las técnicas de evasión:</p>
+        <ol>
+          <li>
+            <i> Evasión mediante fragmentación: </i>
+            La fragmentación de paquetes es una técnica en la que los atacantes
+            dividen el tráfico de datos en pequeños fragmentos, de modo que los
+            IDS no pueden reconstruir adecuadamente el flujo completo de la
+            información. Un IDS se encarga de analizar el tráfico de red en
+            tiempo real, pero cuando los datos están fragmentados, se vuelve
+            difícil para el sistema identificar patrones de ataque. Esta técnica
+            aprovecha la forma en que ciertos protocolos manejan la
+            reensamblación de fragmentos de paquetes, lo que permite ocultar
+            comandos o malware entre los fragmentos.
+          </li>
+          <ul>
+            <li>
+              <i> Ejemplo: </i>
+              Un atacante que desea explotar una vulnerabilidad en una
+              aplicación web puede dividir el exploit en varios fragmentos de
+              paquetes, de modo que el IDS no detecte el código malicioso
+              completo al analizar solo los fragmentos.
+            </li>
+          </ul>
+          <li>
+            <i> Modificación del tráfico: </i>
+            Esta técnica involucra la alteración de ciertos atributos en los
+            paquetes de datos, como las cabeceras, para evadir la detección. Los
+            atacantes pueden cambiar los parámetros del tráfico de red, como las
+            direcciones IP de origen, los puertos, o utilizar técnicas de
+            cifrado para que el contenido malicioso no sea legible por los
+            sistemas de detección.
+          </li>
+          <ul>
+            <li>
+              <i> Cifrado: </i>
+              Cuando los datos están cifrados, el IDS no puede inspeccionar el
+              contenido de los paquetes, ya que solo puede ver las cabeceras,
+              pero no el contenido real. Esto es común en ataques que utilizan
+              túneles cifrados (como VPNs o SSH), donde el tráfico malicioso
+              viaja oculto dentro de un canal seguro.
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <i> Ofuscación de cabeceras: </i>
+              Cambiar las cabeceras o manipular los campos de los paquetes de
+              manera que confundan al IDS y este no pueda identificar
+              correctamente el patrón del ataque.
+            </li>
+          </ul>
+          <li>
+            <i> Ataques de tráfico lento: </i>
+            En un ataque de tráfico lento, el atacante envía solicitudes a una
+            velocidad extremadamente baja, lo que dificulta que el IDS detecte
+            la actividad maliciosa. Los sistemas de detección suelen estar
+            configurados para detectar ráfagas rápidas de tráfico, que son
+            indicativos de ataques como el DoS (Denegación de Servicio). Sin
+            embargo, en un ataque de tráfico lento, las solicitudes se
+            distribuyen a lo largo del tiempo, haciendo que el tráfico parezca
+            legítimo y evitando que se disparen las alertas de seguridad.
+          </li>
+          <ul>
+            <li>
+              <i> Ejemplo: </i>
+              Un atacante puede utilizar herramientas como "Slowloris", que
+              envía pequeñas porciones de una solicitud HTTP muy lentamente para
+              mantener la conexión abierta sin ser detectado. Esto permite
+              realizar un ataque DoS sin que el IDS lo registre como una amenaza
+              inmediata.
+            </li>
+          </ul>
+          <li>
+            <i> Uso de tráfico legítimo: </i>
+            Esta técnica consiste en mezclar el tráfico malicioso con tráfico
+            aparentemente inofensivo o legítimo, de manera que sea difícil para
+            el IDS diferenciar entre el tráfico benigno y el malicioso. Los
+            atacantes aprovechan la capacidad limitada de los sistemas IDS para
+            analizar cada paquete individualmente, especialmente cuando el
+            tráfico malicioso se presenta de manera similar al tráfico cotidiano
+            de la red.
+          </li>
+          <ul>
+            <li>
+              <i> Ejemplo: </i>
+              Un atacante que intenta exfiltrar datos puede enviar pequeños
+              fragmentos de información en medio de tráfico legítimo, como
+              correos electrónicos o navegación web normal, para evitar ser
+              detectado por el IDS.
+            </li>
+          </ul>
+        </ol>
+        <center><img src="images/image32.jpg" /></center>
+      </section>
+
+      <section id="ataques-contrasenas">
+        <h2>Ataques a Contraseñas</h2>
+        <p>
+          Los ataques a contraseñas son técnicas utilizadas por los atacantes
+          para obtener acceso no autorizado a sistemas y cuentas mediante la
+          obtención, adivinanza o fuerza bruta de contraseñas.
+        </p>
+        <p>
+          Algunos de los tipos más comunes de ataques de contraseñas incluyen el
+          descifrado de contraseñas, el rociado de contraseñas, los ataques de
+          diccionario, el relleno de credenciales, los ataques de fuerza bruta y
+          los ataques de tabla de arco iris. Cuanto mejores sean sus hábitos en
+          lo que se refiere a contraseñas, menos susceptible será a sufrir
+          ataques. El informe sobre gestión de contraseñas de Keeper reveló que
+          tan solo el 25 % de los encuestados usa contraseñas seguras y únicas
+          para cada cuenta, lo que significa que el 75 % de los encuestados pone
+          sus cuentas en peligro debido a contraseñas debiles.
+        </p>
+        <p>Ejemplos de ataques a contraseñas:</p>
+        <ul>
+          <li>
+            <i> Descifrado de contraseñas: </i>
+            El desciframiento de contraseñas es cuando los cibercriminales
+            utilizan programas y herramientas para obtener acceso no autorizado
+            a las cuentas en línea. Si bien hay varios tipos de técnicas de
+            descifrado de contraseñas, todas tienen el objetivo común de
+            comprometer las cuentas de los usuarios con fines maliciosos. A
+            medida que la inteligencia artificial (IA) se ha vuelto más
+            avanzada, los cibercriminales están utilizando la IA para su ventaja
+            porque las herramientas de IA facilitan el descifrado de las
+            contraseñas. Con la IA, la velocidad a la que los cibercriminales
+            pueden descifrar las contraseñas ha aumentado significativamente.
+          </li>
+          <li>
+            <i> Ataque de fuerza bruta: </i>
+            Un ataque de fuerza bruta es cuando los cibercriminales utilizan el
+            software en un intento de adivinar las credenciales de inicio de
+            sesión a través del método de prueba y error. El software de fuerza
+            bruta funciona introduciendo varias combinaciones diferentes de
+            credenciales hasta que pueda encontrar una coincidencia. Si bien
+            puede parecer ineficiente intentar adivinar las contraseñas a través
+            de prueba y error, el software que utilizan los cibercriminales
+            puede procesar billones de combinaciones de contraseñas en un corto
+            período de tiempo.
+          </li>
+          <li>
+            <i> Difusión de contraseñas: </i>
+            El rociado de contraseñas, también llamado ataque de rociado de
+            contraseñas, es cuando los cibercriminales utilizan una lista de
+            contraseñas de uso común para intentar obtener acceso a varias
+            cuentas en un dominio. Estas listas contienen contraseñas débiles
+            que mucha gente utiliza, como 123456 o «contraseña». Con una
+            herramienta de rociado de contraseñas, los cibercriminales pueden
+            introducir estas listas y utilizar la herramienta para descifrar
+            varias contraseñas a la vez.
+          </li>
+          <li>
+            <i> Ataque de diccionario: </i>
+            Un ataque de diccionario es un ataque de contraseñas que utiliza
+            palabras y frases comunes del diccionario para comprometer las
+            cuentas. En un ataque de diccionario, los cibercriminales utilizan
+            una lista de frases y palabras comúnmente utilizadas como
+            contraseñas. A continuación, utilizan un programa de descifrado de
+            contraseñas para introducir las combinaciones de palabras en
+            diferentes cuentas de usuario en un intento de descifrar las
+            contraseñas.
+          </li>
+          <li>
+            <i> Relleno de credenciales: </i>
+            El relleno de credenciales es un ataque de contraseñas que aprovecha
+            el hecho de que muchas personas las reutilizan en varias cuentas. En
+            un ataque de relleno de credenciales, los cibercriminales utilizan
+            un conjunto de credenciales para intentar comprometer varias cuentas
+            a la vez. A menudo, los cibercriminales utilizan credenciales
+            filtradas en las violaciones de datos públicas.
+          </li>
+          <li>
+            <i> Ataque de tabla de arco iris: </i>
+            Un ataque de tabla de arco iris es cuando los cibercriminales
+            utilizan una tabla especial en un intento de descifrar los hash de
+            las contraseñas. Los hashes de contraseñas son cuando las
+            contraseñas se cambian en una cadena de caracteres ilegibles. Si una
+            empresa con la que tiene una cuenta cifra las contraseñas de los
+            usuarios, eso significa que solo almacenan los hash de las
+            contraseñas. Esto es para que los cibercriminales no puedan saber
+            cuál es la contraseña de su cuenta si esa empresa sufriera una
+            violación de datos.
+          </li>
+        </ul>
+        <p>
+          Los ataques a las contraseñas son peligrosos porque pueden comprometer
+          la seguridad de una cuenta o tomar posesión de ella, lo que puede dar
+          lugar al robo de su identidad y a que sufra pérdidas financieras. La
+          apropiación de cuentas es cuando una persona no autorizada obtiene
+          acceso a una o más de sus cuentas en línea y le bloquea cambiando su
+          contraseña.
+        </p>
+        <p>
+          Debido a que su contraseña fue cambiada, puede tomar un tiempo
+          recuperar el acceso a su cuenta o, en algunos casos, es posible que no
+          pueda recuperarlo en absoluto.
+        </p>
+        <p>
+          Durante el tiempo que una persona no autorizada tiene acceso a su
+          cuenta, puede recopilar información confidencial sobre usted y
+          utilizar esa información para robar su identidad. El robo de identidad
+          puede ser difícil de recuperar y dar lugar a graves pérdidas
+          financieras.
+        </p>
+        <center><img src="images/image31.png" /></center>
+      </section>
+
+      <section id="protocolos-red">
+        <h2>Debilidades de los Protocolos de Red</h2>
+        <p>
+          Los protocolos de red son reglas y estándares que permiten la
+          comunicación entre dispositivos en una red. Sin embargo, algunos de
+          estos protocolos tienen debilidades intrínsecas que pueden ser
+          explotadas por atacantes para comprometer la seguridad de la red.
+        </p>
+        <p>
+          Tres factores de seguridad de red son la vulnerabilidad, las amenazas
+          y los ataques.
+        </p>
+        <ul>
+          <li>
+            <i> Vulnerabilidad: </i>
+            Grado de debilidad inherente a cada red y dispositivo. Esto incluye
+            routers, switches, computadoras de escritorio, servidores e,
+            incluso, dispositivos de seguridad.
+            <ul>
+              <li>Tecnológicas.</li>
+              <li>De configuración.</li>
+              <li>De política de seguridad.</li>
+            </ul>
+          </li>
+          <li>
+            <i> Amenazas: </i>
+            Incluyen a las personas interesadas en aprovechar cada debilidad de
+            seguridad y capacitadas para hacerlo. Es de esperarse que estas
+            personas busquen continuamente nuevas vulnerabilidades y debilidades
+            de seguridad.
+          </li>
+          <li>
+            <i> Ataques: </i>
+            Las amenazas se llevan a cabo con una variedad de herramientas,
+            secuencias de comandos y programas para iniciar ataques contra las
+            redes y los dispositivos de red. Por lo general, los dispositivos de
+            red que sufren ataques son las terminales, como los servidores y las
+            computadoras de escritorio.
+          </li>
+        </ul>
+        <p>
+          Todas estas vulnerabilidades o debilidades pueden dar origen a
+          diversos ataques, incluidos los ataques de código malintencionado y
+          los ataques de red.
+        </p>
+        <p>Algunos servicios con estas debilidades son:</p>
+        <ul>
+          <li>
+            Protocolos no cifrados: Protocolos como HTTP, FTP o Telnet
+            transmiten datos en texto plano, lo que facilita su interceptación
+            mediante ataques de "man-in-the-middle".
+          </li>
+          <li>
+            Vulnerabilidades en DNS: Ataques como el DNS spoofing o cache
+            poisoning permiten a los atacantes redirigir el tráfico a sitios
+            maliciosos.
+          </li>
+          <li>
+            Debilidades en IPv4: La falta de autenticación en el protocolo IPv4
+            permite ataques como la suplantación de IP (IP spoofing).
+          </li>
+          <li>
+            Problemas con ARP: El protocolo ARP (Address Resolution Protocol)
+            puede ser manipulado mediante ataques de ARP poisoning, permitiendo
+            interceptar tráfico en una red.
+          </li>
+        </ul>
+        <center>
+          <img src="images/image34.png" /> <img src="images/image33.png" />
+        </center>
+      </section>
+
+      <section id="fingerprinting">
+        <h2>Fingerprinting</h2>
+        <p>
+          Podemos definir qué es fingerprinting como un tipo de recolección de
+          datos que requiere de la interacción con el sistema analizado. Por lo
+          tanto, el fingerprinting puede dejar rastro sobre las direcciones IP
+          desde las que se hace el estudio.
+        </p>
+        <p>
+          Para aplicar las técnicas de fingerprinting es muy importante
+          asegurarse de contar con autorización del propietario del sistema; de
+          lo contrario, se podría estar incurriendo en un delito cibernético.
+        </p>
+        <p>
+          Para un ciberdelincuente, el fingerprinting es una técnica que le
+          sirve para expandir su superficie de ataque. Para un hacker ético,
+          esta técnica de seguimiento le permite identificar posibles
+          ciberataques de phishing o pharming, entre otros, y mejorar su
+          protección de datos.
+        </p>
+        <p>
+          Por medio del fingerprinting, se puede indagar para obtener
+          información sobre direcciones IP, navegadores web, sistema operativo,
+          proveedor de servicios, etc. Todo esto puede usarse para hallar
+          vulnerabilidades en un sistema.
+        </p>
+        <p>Técnicas de fingerprinting:</p>
+        <ul>
+          <li>
+            <i> Escaneo de puertos: </i>
+            Identificar puertos abiertos en un sistema.
+          </li>
+          <li>
+            <i> Análisis de servicios: </i>
+            Determinar qué servicios y versiones están corriendo en esos
+            puertos.
+          </li>
+          <li>
+            <i> Detección de sistemas operativos: </i>
+            Identificar el sistema operativo y su versión.
+          </li>
+        </ul>
+        <p>Herramientas para fingerprinting:</p>
+        <ul>
+          <li>
+            <i> Wappalyzer: </i>
+            Existen muchas extensiones para obtener más información acerca de
+            una página web. Una de ellas es Wappalyzer, que te brinda datos
+            sobre la tecnología con la que ha sido desarrollado el sitio. Al
+            abrir un sitio web, esta extensión te revela datos como con qué
+            lenguaje de programación fue hecho el sitio, qué tipo de servidor
+            web utiliza, su gestor de contenido, etc.Esta aplicación de
+            Wappalyzer, con solo abrir el sitio web, no realiza ningún escaneo y
+            no genera ruido. Sin embargo, sí hay una interacción directa y, por
+            lo tanto, coincide con la definición de qué es fingerprinting.
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <i> Nmap: </i>
+            Con icónicos cameos en producciones como Matrix y Mr. Robot, Nmap es
+            una herramienta de escaneo de puertos, que fue creada en 1997 y
+            continúa siendo la más utilizada en cualquier fase de
+            reconocimiento.
+            <p>
+              Este escaneo se debe hacer solamente con autorización del
+              propietario del sitio web, de lo contrario, podría incurrirse en
+              un delito. No obstante, la función de Nmap no termina en escanear
+              los puertos de un dominio web, sino que esta herramienta también
+              permite escaneo de redes, escaneo de puertos específicos, un rango
+              de puertos, un conjunto de dominios y más.
+            </p>
+          </li>
+        </ul>
+        <center><img src="images/image37.png" /></center>
+      </section>
+
+      <section id="atacantes">
+        <h2>Tipos de Atacantes</h2>
+        <ol>
+          <li>
+            <b>Hackers de sombrero negro (Black Hat)</b>
+            <p>
+              Son atacantes maliciosos que buscan vulnerabilidades en sistemas
+              con el objetivo de robar datos, causar daño o acceder sin
+              autorización. Generalmente, lo hacen por beneficio económico,
+              notoriedad o simplemente para causar caos.
+            </p>
+            <center><img src="images/image35.png" /></center>
+          </li>
+          <li>
+            <b>Hackers de sombrero blanco (White Hat)</b>
+            <p>
+              Son profesionales de seguridad que buscan vulnerabilidades para
+              proteger los sistemas y redes. Su trabajo es ético y generalmente
+              se dedican a realizar pruebas de penetración y auditorías de
+              seguridad para empresas.
+            </p>
+            <center><img src="images/image36.png" /></center>
+          </li>
+          <li>
+            <b>Hackers de sombrero gris (Gray Hat)</b>
+          </li>
+          <p>
+            Este tipo de atacante se sitúa en un punto intermedio entre los
+            hackers de sombrero blanco y negro. A veces actúan sin autorización,
+            pero no necesariamente con fines maliciosos. Después de encontrar
+            vulnerabilidades, pueden notificar a las empresas afectadas o hacer
+            públicas las vulnerabilidades.
+          </p>
+          <center><img src="images/image38.png" /></center>
+          <li>
+            <b>Script Kiddies</b>
+            <p>
+              Son atacantes inexpertos que utilizan herramientas o scripts
+              desarrollados por otros para lanzar ataques. No suelen tener un
+              conocimiento profundo de las técnicas que emplean, pero aún así
+              pueden causar daños significativos.
+              <center><img src="images/image39.png" /></center>
+            </p>
+          </li>
+          <li>
+            <b>Hacktivistas</b>
+            <p>
+              Son atacantes que llevan a cabo actividades de hacking para
+              promover una causa política o social. Utilizan sus habilidades
+              para atacar a organizaciones, gobiernos o individuos que
+              consideran opresivos o inmorales.
+            </p>
+            <center><img src="images/image40.png" /></center>
+          </li>
+          <li>
+            <b>Ciberterroristas</b>
+            <p>
+              Son atacantes que realizan ciberataques con el propósito de causar
+              pánico, miedo o desestabilización social, política o económica.
+              Estos ataques pueden estar dirigidos a infraestructuras críticas
+              como redes eléctricas, hospitales o servicios de
+              telecomunicaciones.
+            </p>
+            <center><img src="images/image41.png" /></center>
+          </li>
+          <li>
+            <b>Cibercriminales</b>
+            <p>
+              Son delincuentes que utilizan medios tecnológicos para llevar a
+              cabo actividades ilegales con el objetivo de obtener ganancias
+              económicas, como el robo de información financiera o la extorsión
+              mediante ransomware.
+            </p>
+            <center><img src="images/image42.png" /></center>
+          </li>
+          <li>
+            <b>Insiders maliciosos</b>
+            <p>
+              Son empleados, ex empleados o personas con acceso interno a una
+              organización que utilizan su posición para robar información,
+              sabotear sistemas o filtrar datos confidenciales. A menudo, actúan
+              motivados por resentimientos o ganancias financieras.
+            </p>
+            <center><img src="images/image43.png" /></center>
+          </li>
+          <li>
+            <b>Lammers</b>
+            <p>
+              Son personas que intentan parecer hackers, pero no tienen las
+              habilidades necesarias para realizar ataques sofisticados.
+              Utilizan herramientas básicas y suelen ser más una molestia que
+              una verdadera amenaza.
+            </p>
+            <center><img src="images/image44.png" /></center>
+          </li>
+          <li>
+            <b>Spammers</b>
+            <p>
+              Estos atacantes envían grandes cantidades de correos electrónicos
+              no deseados, generalmente con fines comerciales o fraudulentos.
+              Aunque no son tradicionalmente considerados hackers, su actividad
+              puede saturar redes y comprometer la seguridad si contienen
+              malware.
+            </p>
+            <center><img src="images/image45.png" /></center>
+          </li>
+          <li>
+            <b>Phreakers</b>
+            <p>
+              Son atacantes especializados en el hacking de redes de
+              telecomunicaciones. Los phreakers buscan vulnerabilidades en
+              sistemas telefónicos para realizar llamadas gratuitas o
+              interceptar comunicaciones.
+            </p>
+            <center><img src="images/image16.png" /></center>
+          </li>
+          <li>
+            <b>Cazarrecompensas de bugs (Bug Bounty Hunters)</b>
+            <p>
+              Son profesionales que buscan vulnerabilidades en aplicaciones o
+              sistemas y las informan a los propietarios de manera ética a
+              cambio de una recompensa financiera. Aunque sus acciones son
+              legales, actúan con el mismo objetivo de detectar fallas que los
+              atacantes maliciosos podrían explotar.
+            </p>
+            <center><img src="images/image17.png" /></center>
+          </li>
+          <li>
+            <b>Trolls</b>
+            <p>
+              Aunque su principal objetivo no es robar o destruir, los trolls
+              buscan interrumpir, provocar y causar malestar en foros, redes
+              sociales o plataformas en línea. Utilizan tácticas de acoso y
+              amenazas para desestabilizar a comunidades y personas.
+            </p>
+            <center><img src="images/image18.png" /></center>
+          </li>
+          <li>
+            <b>Keyloggers</b>
+            <p>
+              Aunque en muchos casos "keylogger" se refiere a una herramienta,
+              los atacantes que utilizan este método instalan software o
+              hardware que captura cada pulsación de teclado de la víctima, con
+              el objetivo de robar contraseñas o información personal.
+            </p>
+            <center><img src="images/image19.png" /></center>
+          </li>
+          <li>
+            <b>Carders</b>
+            <p>
+              Son atacantes especializados en el robo de información de tarjetas
+              de crédito y débito. Utilizan técnicas como el skimming, phishing
+              y malware para obtener los datos de las tarjetas, que luego venden
+              en el mercado negro o utilizan para hacer compras fraudulentas.
+            </p>
+            <center><img src="images/image20.png" /></center>
+          </li>
+          <li>
+            <b>Crackers</b>
+            <p>
+              Un cracker es un atacante que se especializa en romper la
+              seguridad de software, como eludir protecciones de derechos de
+              autor o contraseñas. El término a menudo se utiliza para
+              distinguirlos de los "hackers" que se dedican a actividades no
+              maliciosas.
+            </p>
+            <center><img src="images/image21.png" /></center>
+          </li>
+          <li>
+            <b>Espías corporativos</b>
+            <p>
+              Estos atacantes suelen ser empleados por competidores comerciales
+              para obtener secretos industriales, patentes o cualquier tipo de
+              información estratégica que les brinde una ventaja sobre sus
+              rivales en el mercado.
+            </p>
+            <center><img src="images/image22.png" /></center>
+          </li>
+          <li>
+            <b>Ingenieros sociales</b>
+            <p>
+              Son atacantes que manipulan psicológicamente a las personas para
+              que revelen información confidencial, como contraseñas o datos de
+              acceso. El phishing y el vishing son ejemplos comunes de ataques
+              basados en ingeniería social.
+            </p>
+            <center><img src="images/image23.png" /></center>
+          </li>
+          <li>
+            <b>Nation-state attackers (Atacantes patrocinados por el Estado)</b>
+            <p>
+              Son atacantes financiados o respaldados por gobiernos para llevar
+              a cabo ciberespionaje o ciberataques contra otros estados,
+              infraestructuras críticas, corporaciones o individuos. Estos
+              atacantes tienen recursos y habilidades avanzadas.
+            </p>
+            <center><img src="images/image24.png" /></center>
+          </li>
+          <li>
+            <b>Hackers éticos freelance</b>
+            <p>
+              Al igual que los hackers de sombrero blanco, estos atacantes
+              buscan vulnerabilidades para fines positivos, pero trabajan de
+              forma independiente, ofreciendo sus servicios a empresas o
+              proyectos de ciberseguridad como consultores externos.
+            </p>
+            <p>
+              Estos atacantes difieren en sus objetivos, motivaciones y métodos,
+              pero todos representan una amenaza potencial para la seguridad
+              informática si no se implementan las defensas adecuadas.
+            </p>
+            <center><img src="images/image25.png" /></center>
+          </li>
+        </ol>
+      </section>
+
+      <section id="hackers-famosos">
+        <h2>Hackers Famosos</h2>
+        <ol>
+          <li>
+            <b>Kevin Mitnick</b>
+            <p>
+              Ataque: Infiltración en sistemas de empresas como Nokia, Motorola,
+              y Sun Microsystems.
+            </p>
+            <p>
+              Descripción: Mitnick utilizó ingeniería social y habilidades
+              técnicas avanzadas para acceder a sistemas sin autorización. Fue
+              considerado el hacker más buscado por el FBI en los años 90. Sus
+              ataques consistían en robar software y realizar escuchas
+              telefónicas.
+            </p>
+            <center><img src="images/image5.png" /></center>
+          </li>
+          <li>
+            <b>Gary McKinnon</b>
+            <p>Ataque: Infiltración en sistemas de la NASA y el Pentágono.</p>
+            <p>
+              Descripción: McKinnon, un hacker británico, accedió a redes
+              militares de EE. UU. entre 2001 y 2002, en busca de información
+              sobre ovnis y tecnología secreta. Su ataque fue descrito como "el
+              mayor hackeo militar de todos los tiempos" por las autoridades
+              estadounidenses.
+            </p>
+            <center><img src="images/image6.png" /></center>
+          </li>
+          <li>
+            <b>Adrian Lamo</b>
+            <p>
+              Ataque: Infiltración en los sistemas del New York Times y
+              Microsoft.
+            </p>
+            <p>
+              Descripción: Lamo se ganó el apodo de "el hacker vagabundo" por
+              acceder a sistemas sin permiso y luego informar de las
+              vulnerabilidades a las empresas afectadas. También es conocido por
+              denunciar a Chelsea Manning, quien filtró documentos
+              confidenciales a WikiLeaks.
+            </p>
+            <center><img src="images/image7.png" /></center>
+          </li>
+          <li>
+            <b>Albert Gonzalez</b>
+            <p>Ataque: Robo masivo de datos de tarjetas de crédito.</p>
+            <p>
+              Descripción: Gonzalez fue responsable del robo de más de 170
+              millones de números de tarjetas de crédito y débito. Dirigió
+              ataques a través de SQL injection y fue el cerebro detrás de uno
+              de los mayores casos de fraude de datos en la historia.
+            </p>
+            <center><img src="images/image8.png" /></center>
+          </li>
+          <li>
+            <b>Jonathan James (c0mrade)</b>
+            <p>
+              Ataque: Infiltración en redes del Departamento de Defensa de EE.
+              UU.
+            </p>
+            <p>
+              Descripción: James, que a los 16 años se convirtió en el primer
+              menor en ser encarcelado por hacking en EE. UU., penetró en
+              sistemas gubernamentales y robó software utilizado para la
+              Estación Espacial Internacional.
+            </p>
+            <center><img src="images/image9.png" /></center>
+          </li>
+          <li>
+            <b>Anonymous</b>
+            <p>
+              Ataques: DDoS contra organizaciones gubernamentales y
+              corporativas.
+            </p>
+            <p>
+              Descripción: Anonymous es un colectivo hacktivista que ha lanzado
+              ataques de denegación de servicio (DDoS) y otras formas de
+              ciberprotesta contra entidades como la Iglesia de la Cienciología,
+              PayPal, MasterCard, y varios gobiernos, buscando promover causas
+              sociales y políticas.
+            </p>
+            <center><img src="images/image10.png" /></center>
+          </li>
+          <li>
+            <b>LulzSec</b>
+            <p>
+              Ataque: Compromiso de datos y ataques DDoS contra corporaciones y
+              agencias gubernamentales.
+            </p>
+            <p>
+              Descripción: Este grupo hacktivista, derivado de Anonymous, atacó
+              sitios web como Sony Pictures, la CIA, y News International en
+              2011. Lo hicieron mayormente por "diversión", burlándose de las
+              vulnerabilidades de las corporaciones.
+            </p>
+            <center><img src="images/image11.png" /></center>
+          </li>
+          <li>
+            <b>Albert Subirats (Chema Alonso)</b>
+            <p>Ataque: Ingeniería inversa y hacking ético.</p>
+            <p>
+              Descripción: Aunque no es un atacante malicioso, Chema Alonso es
+              uno de los hackers más conocidos de España por su trabajo en
+              ciberseguridad. Se ha especializado en identificar
+              vulnerabilidades de seguridad, promoviendo la ética en el hacking.
+            </p>
+            <center><img src="images/image12.png" /></center>
+          </li>
+          <li>
+            <b>Jeanson James Ancheta</b>
+            <p>
+              Ataque: Creación de una botnet para atacar redes informáticas.
+            </p>
+            <p>
+              Descripción: Ancheta infectó miles de computadoras con malware
+              para crear una botnet que utilizaba para alquilarla a otros
+              criminales y realizar ataques DDoS. Fue arrestado en 2005 y
+              condenado a prisión.
+            </p>
+            <center><img src="images/image14.png" /></center>
+          </li>
+          <li>
+            <b>Vladimir Levin</b>
+            <p>Ataque: Robo cibernético al Citibank.</p>
+            <p>
+              Descripción: Levin lideró un equipo que robó $10 millones del
+              Citibank en los años 90 mediante transferencias electrónicas
+              fraudulentas. Aunque gran parte del dinero fue recuperado, Levin
+              fue arrestado y extraditado.
+            </p>
+            <center><img src="images/image15.png" /></center>
+          </li>
+          <li>
+            <b>Guccifer 2.0</b>
+            <p>
+              Ataque: Filtración de correos electrónicos del Comité Nacional
+              Demócrata (DNC).
+            </p>
+            <p>
+              Descripción: Guccifer 2.0, una figura asociada con los servicios
+              de inteligencia rusos, filtró correos electrónicos del DNC en
+              2016, influyendo en las elecciones presidenciales de EE. UU. Se
+              sospecha que fue parte de una campaña de desinformación y hackeo
+              patrocinada por el Estado ruso.
+            </p>
+            <center><img src="images/image1.png" /></center>
+          </li>
+          <li>
+            <b>Marcus Hutchins</b>
+            <p>Ataque/Defensa: Detención del ransomware WannaCry.</p>
+            <p>
+              Descripción: Hutchins, también conocido como "MalwareTech", detuvo
+              la propagación del ransomware WannaCry en 2017 al encontrar un
+              interruptor de apagado en el código del malware. Sin embargo, fue
+              arrestado más tarde por su papel en el desarrollo de otro malware
+              años antes.
+            </p>
+            <center><img src="images/image2.png" /></center>
+          </li>
+          <li>
+            <b>Robert Tappan Morris</b>
+            <p>Ataque: El gusano Morris.</p>
+            <p>
+              Descripción: En 1988, Morris lanzó uno de los primeros gusanos
+              informáticos de la historia, que afectó alrededor del 10% del
+              internet de la época, causando estragos en sistemas universitarios
+              y gubernamentales. Fue el primer caso procesado bajo la Ley de
+              Fraude y Abuso Informático de EE. UU.
+            </p>
+            <center><img src="images/image3.png" /></center>
+          </li>
+          <li>
+            <b>Kevin Poulsen</b>
+            <p>
+              Ataque: Manipulación de líneas telefónicas para ganar concursos de
+              radio.
+            </p>
+            <p>
+              Descripción: Poulsen se hizo famoso por hackear sistemas
+              telefónicos para asegurarse de ser el ganador en concursos de
+              radio. También accedió a bases de datos del FBI y fue arrestado en
+              los 90. Posteriormente, se reformó y ahora trabaja en seguridad
+              cibernética.
+            </p>
+            <center><img src="images/image4.png" /></center>
+          </li>
+          <li>
+            <b>Mathew Bevan y Richard Pryce</b>
+            <p>
+              Ataque: Hackeo de redes militares de EE. UU. y Corea del Norte.
+            </p>
+            <p>
+              Descripción: Bevan y Pryce, dos hackers británicos, accedieron a
+              redes militares de EE. UU. y Corea del Norte en 1996. Sus acciones
+              casi desencadenan un incidente diplomático grave entre EE. UU. y
+              Corea del Norte, ya que se filtró información sensible en sus
+              ataques.
+            </p>
+            <center><img src="images/image13.png" /></center>
+          </li>
+        </ol>
+      </section>
+
+      <section id="Bibliografia">
+        <h2>Bibliografía</h2>
+        <ul>
+          <li>
+            Albrecht, M. R., & Jensen, R. B. (2020). The Vacuity of the Open
+            Source Security Testing Methodology Manual.
+            <i>ArXiv (Cornell University)</i>.
+            <a href="https://doi.org/10.48550/arxiv.2010.06377"
+              >https://doi.org/10.48550/arxiv.2010.06377</a
+            >
+          </li>
+
+          <li>
+            Alonso, C. (2023, September 26). Chema Alonso: “Adoro la tecnología,
+            sí, pero más a las personas.” <i>Telefónica</i>.
+            <a
+              href="https://www.telefonica.com/es/sala-comunicacion/blog/chema-alonso-adoro-tecnologia-pero-mas-personas/"
+              >https://www.telefonica.com/es/sala-comunicacion/blog/chema-alonso-adoro-tecnologia-pero-mas-personas/</a
+            >
+          </li>
+
+          <li>
+            Ancajima, L. (2023, July 20). La historia de Kevin Mitnick, el
+            hacker “más famoso de la historia” que acaba de fallecer.
+            <i>RPP</i>.
+            <a
+              href="https://rpp.pe/tecnologia/mas-tecnologia/la-historia-de-kevin-mitnick-el-hacker-mas-famoso-de-la-historia-que-acaba-de-fallecer-noticia-1496342"
+              >https://rpp.pe/tecnologia/mas-tecnologia/la-historia-de-kevin-mitnick-el-hacker-mas-famoso-de-la-historia-que-acaba-de-fallecer-noticia-1496342</a
+            >
+          </li>
+
+          <li>
+            BBC News. (2016, July 28). Democrat hack: Who is Guccifer 2.0?
+            <i>BBC News</i>.
+            <a href="https://www.bbc.com/news/technology-36913000"
+              >https://www.bbc.com/news/technology-36913000</a
+            >
+          </li>
+
+          <li>
+            Bertoglio, D. D., Gil, A., Acosta, J., Godoy, J., Lunardi, R. C., &
+            Francisco, Z. A. (2023). Towards new challenges of modern Pentest.
+            <i>ArXiv (Cornell University)</i>.
+            <a href="https://doi.org/10.48550/arxiv.2311.12952"
+              >https://doi.org/10.48550/arxiv.2311.12952</a
+            >
+          </li>
+
+          <li>
+            Burdova, C., & Polacko, M. (2020, December 18). Cómo protegerse
+            frente al robo de identidad. <i>Avast</i>.
+            <a href="https://www.avast.com/es-es/c-prevent-identity-theft"
+              >https://www.avast.com/es-es/c-prevent-identity-theft</a
+            >
+          </li>
+
+          <li>
+            Carlos. (2024, June 25). Tipos de hackers y sus distintos roles en
+            la ciberseguridad. <i>Ciberseguridad Hoy</i>.
+            <a
+              href="https://ciberseguridadhoy.es/tipos-de-hackers-y-sus-distintos-roles-en-la-ciberseguridad/"
+              >https://ciberseguridadhoy.es/tipos-de-hackers-y-sus-distintos-roles-en-la-ciberseguridad/</a
+            >
+          </li>
+
+          <li>
+            Desirée, J. (2019, April 23). Quién fue Adrián Lamo, el “hacker
+            vagabundo” que delató a la informante de WikiLeaks, Chelsea Manning.
+            <i>Infobae</i>.
+            <a
+              href="https://www.infobae.com/america/tecno/2019/04/23/quien-fue-adrian-lamo-el-hacker-vagabundo-que-delato-al-informante-de-wikileaks-chelsea-manning/"
+              >https://www.infobae.com/america/tecno/2019/04/23/quien-fue-adrian-lamo-el-hacker-vagabundo-que-delato-al-informante-de-wikileaks-chelsea-manning/</a
+            >
+          </li>
+
+          <li>
+            Dhaliwal, J. (2024, August 19). Cómo identificar las distintas
+            formas de robo de identidad. <i>McAfee</i>.
+            <a
+              href="https://www.mcafee.com/blogs/es-es/privacy-identity-protection/cinco-tipos-comunes-de-robo-de-identidad/"
+              >https://www.mcafee.com/blogs/es-es/privacy-identity-protection/cinco-tipos-comunes-de-robo-de-identidad/</a
+            >
+          </li>
+
+          <li>
+            DragonJAR. (2008, March 17). OSSTMM, Manual de la Metodología
+            Abierta de Testeo de Seguridad. <i>DragonJAR</i>.
+            <a
+              href="https://www.dragonjar.org/osstmm-manual-de-la-metodologia-abierta-de-testeo-de-seguridad.xhtml"
+              >https://www.dragonjar.org/osstmm-manual-de-la-metodologia-abierta-de-testeo-de-seguridad.xhtml</a
+            >
+          </li>
+
+          <li>
+            Federal Bureau of Investigation. (2016). A Byte Out of History: $10
+            Million Hack. <i>FBI</i>.
+            <a
+              href="https://www.fbi.gov/news/stories/a-byte-out-of-history-10-million-hack"
+              >https://www.fbi.gov/news/stories/a-byte-out-of-history-10-million-hack</a
+            >
+          </li>
+
+          <li>
+            Gregory, J. (2022, January 26). 10 Years later, what did LulzSec
+            mean for cybersecurity? <i>Security Intelligence</i>.
+            <a
+              href="https://securityintelligence.com/articles/lulzsec-10-years-later-cybersecurity-influence-meaning/"
+              >https://securityintelligence.com/articles/lulzsec-10-years-later-cybersecurity-influence-meaning/</a
+            >
+          </li>
+
+          <li>
+            Jacobo, G., & Sánchez-Macián, A. (2024). PTHelper: An open source
+            tool to support the Penetration Testing process.
+            <i>ArXiv (Cornell University)</i>.
+            <a href="https://doi.org/10.48550/arxiv.2406.08242"
+              >https://doi.org/10.48550/arxiv.2406.08242</a
+            >
+          </li>
+
+          <li>
+            Jordi, P. (2020, May 17). La caída y redención del hacker que salvó
+            al mundo de Wannacry. <i>El País</i>.
+            <a
+              href="https://elpais.com/tecnologia/2020-05-17/la-caida-y-redencion-del-hacker-que-salvo-al-mundo-de-wannacry.html"
+              >https://elpais.com/tecnologia/2020-05-17/la-caida-y-redencion-del-hacker-que-salvo-al-mundo-de-wannacry.html</a
+            >
+          </li>
+
+          <li>
+            Kaspersky. (2017, December 5). Los hacker más famosos del mundo.
+            <i>Kaspersky</i>.
+            <a
+              href="https://latam.kaspersky.com/resource-center/threats/top-ten-greatest-hackers"
+              >https://latam.kaspersky.com/resource-center/threats/top-ten-greatest-hackers</a
+            >
+          </li>
+
+          <li>
+            KeepCoding. (2022, June 6). ¿Qué es fingerprinting?
+            <i>KeepCoding</i>.
+            <a
+              href="https://keepcoding.io/blog/que-es-fingerprinting-ciberseguridad/"
+              >https://keepcoding.io/blog/que-es-fingerprinting-ciberseguridad/</a
+            >
+          </li>
+
+          <li>
+            KeepCoding. (2024, June 21). 7 tipos de hackers. <i>KeepCoding</i>.
+            <a href="https://keepcoding.io/blog/7-tipos-de-hackers/"
+              >https://keepcoding.io/blog/7-tipos-de-hackers/</a
+            >
+          </li>
+
+          <li>
+            La Razón. (2020, June 16). ¿Quién es Anonymous y qué ha hecho este
+            grupo de hackers durante todos estos años? <i>La Razón</i>.
+            <a
+              href="https://www.larazon.es/tecnologia/20200616/g5ascqel55crpbbr2jsjqklvum.html"
+              >https://www.larazon.es/tecnologia/20200616/g5ascqel55crpbbr2jsjqklvum.html</a
+            >
+          </li>
+
+          <li>
+            Mundo LR. (2020, June 4). ¿Quién es Gary Mckinon?, el hacker que
+            burló la seguridad del sistema informático de EE. UU.
+            <i>La República</i>.
+            <a
+              href="https://larepublica.pe/mundo/2020/06/03/quien-es-gary-mckinon-el-hacker-mas-peligroso-que-anonymous-y-que-puso-en-jaque-a-estados-unidos-atmp"
+              >https://larepublica.pe/mundo/2020/06/03/quien-es-gary-mckinon-el-hacker-mas-peligroso-que-anonymous-y-que-puso-en-jaque-a-estados-unidos-atmp</a
+            >
+          </li>
+
+          <li>
+            OSSTMM 3 – the Open Source Security Testing Methodology Manual.
+            (2024). <i>Docslib</i>.
+            <a
+              href="https://docslib.org/doc/1802949/osstmm-3-the-open-source-security-testing-methodology-manual"
+              >https://docslib.org/doc/1802949/osstmm-3-the-open-source-security-testing-methodology-manual</a
+            >
+          </li>
+
+          <li>
+            Ovidiu Valea, & Ciprian Oprisa. (2020). Towards Pentesting
+            Automation Using the Metasploit Framework.
+            <a href="https://doi.org/10.1109/iccp51029.2020.9266234"
+              >https://doi.org/10.1109/iccp51029.2020.9266234</a
+            >
+          </li>
+
+          <li>
+            Palo Alto Networks. (2015). ¿Qué es un sistema de detección de
+            intrusiones? <i>Palo Alto Networks</i>.
+            <a
+              href="https://www.paloaltonetworks.lat/cyberpedia/what-is-an-intrusion-detection-system-ids"
+              >https://www.paloaltonetworks.lat/cyberpedia/what-is-an-intrusion-detection-system-ids</a
+            >
+          </li>
+
+          <li>
+            Pires, L. (2023). ¿Qué tipos de hacker existen y qué los diferencia?
+            <i>ESET</i>.
+            <a
+              href="https://www.welivesecurity.com/es/otros-temas/tipos-hacker-diferencias/"
+              >https://www.welivesecurity.com/es/otros-temas/tipos-hacker-diferencias/</a
+            >
+          </li>
+
+          <li>
+            Procesia. (2024, August 13). Anonymous: ¿Quiénes son y cuáles son
+            sus intenciones? <i>Procesia</i>.
+            <a
+              href="https://procesia.com/el-grupo-de-hackers-anonymous-quienes-son/"
+              >https://procesia.com/el-grupo-de-hackers-anonymous-quienes-son/</a
+            >
+          </li>
+
+          <li>
+            Proofpoint. (2023, September 20). Robo de identidad (Identity
+            Theft). <i>Proofpoint</i>.
+            <a
+              href="https://www.proofpoint.com/es/threat-reference/identity-theft"
+              >https://www.proofpoint.com/es/threat-reference/identity-theft</a
+            >
+          </li>
+
+          <li>
+            RedIRIS. (2008, November 12). Sistemas de detección de intrusos.
+            <i>RedIRIS</i>.
+            <a href="https://www.rediris.es/cert/doc/unixsec/node26.html"
+              >https://www.rediris.es/cert/doc/unixsec/node26.html</a
+            >
+          </li>
+
+          <li>
+            Regan, J., & Belcic, I. (2021, July 27). Los hackers más peligrosos
+            y famosos del momento. <i>AVG</i>.
+            <a
+              href="https://www.avg.com/es/signal/the-most-dangerous-hackers-today"
+              >https://www.avg.com/es/signal/the-most-dangerous-hackers-today</a
+            >
+          </li>
+
+          <li>
+            Samuel, D. (2020, February 26). ¿Qué es el Pentesting?
+            <i>Campus Internacional de Ciberseguridad</i>.
+            <a
+              href="https://www.campusciberseguridad.com/blog/item/139-que-es-el-pentesting"
+              >https://www.campusciberseguridad.com/blog/item/139-que-es-el-pentesting</a
+            >
+          </li>
+
+          <li>
+            Sapalomera. (2024). 11.2.1.3 Tipos de vulnerabilidades de seguridad.
+            <a
+              href="https://www.sapalomera.cat/moodlecf/RS/1/course/module11/11.2.1.3/11.2.1.3.html"
+              >https://www.sapalomera.cat/moodlecf/RS/1/course/module11/11.2.1.3/11.2.1.3.html</a
+            >
+          </li>
+
+          <li>
+            Tamanna Jena Singhdeo, Reeja, S. R., Bhavsar, A., & Suresh
+            Satapathy. (2023). Penetration Testing of Web Server Using
+            Metasploit Framework and DVWA.
+            <i>Smart Innovation, Systems and Technologies</i>, 189–199.
+            <a href="https://doi.org/10.1007/978-981-99-6706-3_17"
+              >https://doi.org/10.1007/978-981-99-6706-3_17</a
+            >
+          </li>
+
+          <li>
+            Trevino, A. (2024, January 12). Tipos de ataques a contraseñas.
+            <i>Keeper Security Blog</i>.
+            <a
+              href="https://www.keepersecurity.com/blog/es/2024/01/12/types-of-password-attacks/#:~:text=El%20rociado%20de%20contrase%C3%B1as%2C%20tambi%C3%A9n,como%20123456%20o%20%C2%ABcontrase%C3%B1a%C2%BB"
+              >https://www.keepersecurity.com/blog/es/2024/01/12/types-of-password-attacks/#:~:text=El%20rociado%20de%20contrase%C3%B1as%2C%20tambi%C3%A9n,como%20123456%20o%20%C2%ABcontrase%C3%B1a%C2%BB</a
+            >
+          </li>
+
+          <li>
+            Tu Consultor TI. (2024, September 29). Guía OSSTMM: La Metodología
+            Definitiva para Pruebas de Seguridad.
+            <a href="https://www.tuconsultorti.com/ciberseguridad/guia-osstmm/"
+              >https://www.tuconsultorti.com/ciberseguridad/guia-osstmm/</a
+            >
+          </li>
+
+          <li>
+            UNAM-CERT. (2016). Robo de identidad y consecuencias sociales.
+            <i>UNAM</i>.
+            <a
+              href="https://www.seguridad.unam.mx/robo-de-identidad-y-consecuencias-sociales"
+              >https://www.seguridad.unam.mx/robo-de-identidad-y-consecuencias-sociales</a
+            >
+          </li>
+
+          <li>
+            USAGov. (2024). Robo de identidad. <i>USAGov</i>.
+            <a href="https://www.usa.gov/es/robo-identidad"
+              >https://www.usa.gov/es/robo-identidad</a
+            >
+          </li>
+
+          <li>
+            Verónica Arranz. (2024, May 21). Metasploit: La herramienta esencial
+            en Ciberseguridad. <i>Campus Internacional de Ciberseguridad</i>.
+            <a
+              href="https://www.campusciberseguridad.com/blog/item/180-metasploit-herramienta-esencial-ciberseguridad"
+              >https://www.campusciberseguridad.com/blog/item/180-metasploit-herramienta-esencial-ciberseguridad</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Grupo 01 - Seguridad Informática Básica</p>
+    </footer>
+  </body>
+</html>
